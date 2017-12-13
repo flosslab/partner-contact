@@ -30,7 +30,7 @@
                             <field name="city"/>
                             <field name="country_id"/>
                             <field name="mobile"/>
-                            <field name="fax"/>
+                            <!--<field name="fax"/>-->
                             <field name="state_id"/>
                             <field name="image"/>
                             <field name="lang"/>
@@ -64,7 +64,7 @@
                                             </div>
                                             <div t-if="record.phone.raw_value">Phone: <field name="phone"/></div>
                                             <div t-if="record.mobile.raw_value">Mobile: <field name="mobile"/></div>
-                                            <div t-if="record.fax.raw_value">Fax: <field name="fax"/></div>
+                                            <!--<div t-if="record.fax.raw_value">Fax: <field name="fax"/></div>-->
                                         </div>
                                     </div>
                                 </t>
