@@ -9,9 +9,7 @@
     "category": "Customer Relationship Management",
     "license": "AGPL-3",
     "depends": [
-        'base',
-        'sale',
-        'sales_team',
+        'crm'
     ],
     "demo": [
         "data/demo.xml",
