@@ -13,7 +13,7 @@
             </xpath>
             <xpath expr='//page[@name="internal_notes"]' position="before">
                 <page string="Affiliates" attrs="{'invisible': [('is_company','=',False)]}">
-                    <field name="affiliate_ids" context="{'default_parent_id': active_id, 'default_is_company': True}" mode="kanban">
+                    <field name="affiliate_ids" context="{'default_parent_id': active_id, 'default_is_company': True}" mode="kanban" widget="many2many">
                         <kanban>
                             <field name="color"/>
                             <field name="name"/>
