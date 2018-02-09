@@ -1,24 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
 
-        <menuitem
-            id="menu_res_partner_relation"
-            parent="crm.crm_menu_config"
-            action="action_res_partner_relation_all"
-        />
+    <menuitem
+        id="menu_res_partner_relation"
+        parent="contacts.menu_contacts"
+        action="action_res_partner_relation_all"
+        sequence="2"
+    />
 
-        <act_window
-            id="action_res_partner_relation_type"
-            res_model="res.partner.relation.type"
-            view_mode="tree,form"
-            name="Partner Relations Types"
-        />
+    <record model="ir.ui.menu" id="contacts.res_partner_menu_config">
+        <field name="sequence" eval="3"/>
+    </record>
 
-        <menuitem
-            id="menu_res_partner_relation_type"
-            parent="crm.crm_menu_config"
-            action="action_res_partner_relation_type"
-            groups="group_partner_multi_relation_type_admin"
-        />
+    <act_window
+        id="action_res_partner_relation_type"
+        res_model="res.partner.relation.type"
+        view_mode="tree,form"
+        name="Partner Relations Types"
+    />
+
+    <menuitem
+        id="menu_res_partner_relation_type"
+        parent="contacts.res_partner_menu_config"
+        action="action_res_partner_relation_type"
+        groups="group_partner_multi_relation_type_admin"
+    />
 
 </odoo>
